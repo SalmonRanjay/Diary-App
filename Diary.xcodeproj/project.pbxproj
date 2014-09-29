@@ -15,6 +15,10 @@
 		A654F3FF19D8D91F00E7362F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A654F3FE19D8D91F00E7362F /* Images.xcassets */; };
 		A654F40219D8D91F00E7362F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A654F40019D8D91F00E7362F /* LaunchScreen.xib */; };
 		A654F40E19D8D91F00E7362F /* DiaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A654F40D19D8D91F00E7362F /* DiaryTests.m */; };
+		A654F41919D8DB8C00E7362F /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = A654F41819D8DB8C00E7362F /* CoreDataStack.m */; };
+		A654F41B19D8DED500E7362F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A654F41A19D8DED500E7362F /* CoreData.framework */; };
+		A654F41D19D8DF5600E7362F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A654F41C19D8DF5600E7362F /* CoreGraphics.framework */; };
+		A654F42019D8E66600E7362F /* DiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A654F41F19D8E66600E7362F /* DiaryEntry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,12 @@
 		A654F40719D8D91F00E7362F /* DiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A654F40C19D8D91F00E7362F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A654F40D19D8D91F00E7362F /* DiaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaryTests.m; sourceTree = "<group>"; };
+		A654F41719D8DB8C00E7362F /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		A654F41819D8DB8C00E7362F /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		A654F41A19D8DED500E7362F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A654F41C19D8DF5600E7362F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A654F41E19D8E66600E7362F /* DiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryEntry.h; sourceTree = "<group>"; };
+		A654F41F19D8E66600E7362F /* DiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryEntry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A654F41D19D8DF5600E7362F /* CoreGraphics.framework in Frameworks */,
+				A654F41B19D8DED500E7362F /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +77,8 @@
 		A654F3E219D8D91F00E7362F = {
 			isa = PBXGroup;
 			children = (
+				A654F41C19D8DF5600E7362F /* CoreGraphics.framework */,
+				A654F41A19D8DED500E7362F /* CoreData.framework */,
 				A654F3ED19D8D91F00E7362F /* Diary */,
 				A654F40A19D8D91F00E7362F /* DiaryTests */,
 				A654F3EC19D8D91F00E7362F /* Products */,
@@ -84,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				A654F3F219D8D91F00E7362F /* AppDelegate.h */,
+				A654F41719D8DB8C00E7362F /* CoreDataStack.h */,
+				A654F41819D8DB8C00E7362F /* CoreDataStack.m */,
 				A654F3F319D8D91F00E7362F /* AppDelegate.m */,
 				A654F3F819D8D91F00E7362F /* ViewController.h */,
 				A654F3F919D8D91F00E7362F /* ViewController.m */,
@@ -91,6 +107,8 @@
 				A654F3FE19D8D91F00E7362F /* Images.xcassets */,
 				A654F40019D8D91F00E7362F /* LaunchScreen.xib */,
 				A654F3F519D8D91F00E7362F /* Diary.xcdatamodeld */,
+				A654F41E19D8E66600E7362F /* DiaryEntry.h */,
+				A654F41F19D8E66600E7362F /* DiaryEntry.m */,
 				A654F3EE19D8D91F00E7362F /* Supporting Files */,
 			);
 			path = Diary;
@@ -222,7 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A654F41919D8DB8C00E7362F /* CoreDataStack.m in Sources */,
 				A654F3F719D8D91F00E7362F /* Diary.xcdatamodeld in Sources */,
+				A654F42019D8E66600E7362F /* DiaryEntry.m in Sources */,
 				A654F3F419D8D91F00E7362F /* AppDelegate.m in Sources */,
 				A654F3FA19D8D91F00E7362F /* ViewController.m in Sources */,
 				A654F3F119D8D91F00E7362F /* main.m in Sources */,
